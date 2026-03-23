@@ -18,13 +18,11 @@ def test_larger_uneven_split() -> None:
 
 
 def test_result_length() -> None:
-    result = split_integer(20, 5)
-    assert len(result) == 5
+    assert len(split_integer(20, 5)) == 5
 
 
 def test_sum_is_correct() -> None:
-    result = split_integer(19, 4)
-    assert sum(result) == 19
+    assert sum(split_integer(19, 4)) == 19
 
 
 def test_is_sorted() -> None:
